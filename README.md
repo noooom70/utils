@@ -2,18 +2,35 @@
 
 Shared utilities, configs, and claude.md files for use across projects.
 
-## Claude.md Files
+## MCP Configs
 
-- `ebay-buyer.claude.md` — eBay auction research assistant. Requires the official eBay MCP server (`@ebay/npm-public-api-mcp`).
+Each MCP we use (not build) gets a directory under `mcps/` with two files:
+
+```
+mcps/
+└── <mcp-name>/
+    ├── setup.md      # How to install, get credentials, configure
+    └── claude.md     # How Claude should use it (symlink into projects)
+```
+
+### Available MCPs
+
+| MCP | Purpose | Server Package |
+|-----|---------|----------------|
+| [ebay](mcps/ebay/) | Auction research, item comparison, price analysis | `@ebay/npm-public-api-mcp` |
 
 ## Usage
 
-Clone this repo and symlink or include files into your project:
+To use an MCP's claude.md in a project, symlink it:
 
 ```bash
-# Symlink into a project
-ln -s ~/utils/ebay-buyer.claude.md ~/my-project/ebay-buyer.claude.md
-
-# Or reference directly in your project's CLAUDE.md
-# See: https://docs.anthropic.com/en/docs/claude-code
+ln -s ~/utils/mcps/ebay/claude.md ~/my-project/ebay.claude.md
 ```
+
+Or reference it from your project's CLAUDE.md.
+
+## Adding a New MCP
+
+1. Create `mcps/<name>/setup.md` with credentials, install, and config steps
+2. Create `mcps/<name>/claude.md` with usage instructions for Claude
+3. Add it to the table above
