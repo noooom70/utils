@@ -1,0 +1,7 @@
+{
+  "allow": [
+    "mcp__ebay-api__*"
+  ],
+  "deny": [],
+  "ask": []
+}

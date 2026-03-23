@@ -1,0 +1,32 @@
+{
+  "allow": [
+    "mcp__obsidian__obsidian_status",
+    "mcp__obsidian__obsidian_get_file",
+    "mcp__obsidian__obsidian_get_active",
+    "mcp__obsidian__obsidian_get_periodic",
+    "mcp__obsidian__obsidian_get_commands",
+    "mcp__obsidian__obsidian_list_vault_root",
+    "mcp__obsidian__obsidian_list_vault_directory",
+    "mcp__obsidian__obsidian_simple_search",
+    "mcp__obsidian__obsidian_search_json_logic",
+    "mcp__obsidian__obsidian_search_dataview"
+  ],
+  "ask": [
+    "mcp__obsidian__obsidian_post_file",
+    "mcp__obsidian__obsidian_put_file",
+    "mcp__obsidian__obsidian_patch_file",
+    "mcp__obsidian__obsidian_post_active",
+    "mcp__obsidian__obsidian_put_active",
+    "mcp__obsidian__obsidian_patch_active",
+    "mcp__obsidian__obsidian_post_periodic",
+    "mcp__obsidian__obsidian_put_periodic",
+    "mcp__obsidian__obsidian_patch_periodic",
+    "mcp__obsidian__obsidian_open_file",
+    "mcp__obsidian__obsidian_execute_command"
+  ],
+  "deny": [
+    "mcp__obsidian__obsidian_delete_file",
+    "mcp__obsidian__obsidian_delete_active",
+    "mcp__obsidian__obsidian_delete_periodic"
+  ]
+}
