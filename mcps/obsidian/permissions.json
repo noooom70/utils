@@ -22,11 +22,10 @@
     "mcp__obsidian__obsidian_put_periodic",
     "mcp__obsidian__obsidian_patch_periodic",
     "mcp__obsidian__obsidian_open_file",
-    "mcp__obsidian__obsidian_execute_command"
-  ],
-  "deny": [
+    "mcp__obsidian__obsidian_execute_command",
     "mcp__obsidian__obsidian_delete_file",
     "mcp__obsidian__obsidian_delete_active",
     "mcp__obsidian__obsidian_delete_periodic"
-  ]
+  ],
+  "deny": []
 }
