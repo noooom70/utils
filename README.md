@@ -20,7 +20,7 @@ mcps/
 |-----|---------|----------------|
 | [ebay](mcps/ebay/) | Auction research, item comparison, price analysis | `@ebay/npm-public-api-mcp` |
 | [github](mcps/github/) | Repo search & discovery (use git/gh CLI for actual work) | `@modelcontextprotocol/server-github` |
-| [obsidian](mcps/obsidian/) | Vault search, reading/writing notes (WSL + Windows) | `@fazer-ai/mcp-obsidian` |
+| [obsidian](mcps/obsidian/) | Vault search, reading/writing notes (filesystem, WSL + Windows) | `@bitbonsai/mcpvault` |
 
 ## Usage
 
